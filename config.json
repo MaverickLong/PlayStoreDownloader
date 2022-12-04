@@ -1,0 +1,302 @@
+{
+    "email": "your_account@gmail.com",
+    "password": "your_password",
+    "servers": {
+        "\u67a3\u5e84\u7535\u4fe1": {
+            "domain": "d.minasan.xyz",
+            "webRoot": "/data/html/"
+        }
+    },
+    "frontend": {
+        "domain": "616.sb",
+        "docRoot": "/data/vue/docs/"
+    },
+    "packages": {
+        "Arcaea": {
+            "Global": {
+                "packageName": "moe.low.arc",
+                "version": 1092003,
+                "versionString": "4.1.4",
+                "obb": {}
+            }
+        },
+        "BanG Dream! Girls Band Party!": {
+            "JP": {
+                "packageName": "jp.co.craftegg.band",
+                "version": 164,
+                "versionString": "6.5.0",
+                "obb": {}
+            }
+        },
+        "Beatmania IIDX Ultimate Mobile": {
+            "Global": {
+                "packageName": "jp.konami.bm2dxum",
+                "version": 65,
+                "versionString": "1.17.1",
+                "obb": {}
+            }
+        },
+        "ChainBeeT": {
+            "Global": {
+                "packageName": "jp.matsu4512.chainbeet",
+                "version": 235,
+                "versionString": "4.8.2",
+                "obb": {}
+            }
+        },
+        "Cytoid": {
+            "Global": {
+                "packageName": "me.tigerhix.cytoid",
+                "version": 200107,
+                "versionString": "2.1.1",
+                "obb": {
+                    "main": "me.tigerhix.cytoid/main.200107.me.tigerhix.cytoid.obb"
+                }
+            }
+        },
+        "Cytus": {
+            "Global": {
+                "packageName": "com.rayark.Cytus.full",
+                "version": 1004740,
+                "versionString": "10.1.4",
+                "obb": {
+                    "main": "com.rayark.Cytus.full/main.1004740.com.rayark.Cytus.full.obb"
+                }
+            }
+        },
+        "DanceRail3": {
+            "Global": {
+                "packageName": "com.dancerail3.soragame",
+                "version": 155,
+                "versionString": "1.55",
+                "obb": {
+                    "main": "com.dancerail3.soragame/main.155.com.dancerail3.soragame.obb"
+                }
+            }
+        },
+        "Deemo": {
+            "Global": {
+                "packageName": "com.rayark.pluto",
+                "version": 1012740,
+                "versionString": "5.0.4",
+                "obb": {
+                    "main": "com.rayark.pluto/main.1012740.com.rayark.pluto.obb",
+                    "patch": "com.rayark.pluto/patch.1012740.com.rayark.pluto.obb"
+                }
+            }
+        },
+        "Deemo II": {
+            "Global": {
+                "packageName": "com.rayark.deemo2",
+                "version": 54138610,
+                "versionString": "2.1.2",
+                "obb": {
+                    "main": "com.rayark.deemo2/main.54138610.com.rayark.deemo2.obb"
+                }
+            }
+        },
+        "Dynamix": {
+            "Global": {
+                "packageName": "com.c4cat.dynamix",
+                "version": 316008,
+                "versionString": "3.16.08",
+                "obb": {
+                    "main": "com.c4cat.dynamix/main.316008.com.c4cat.dynamix.obb"
+                }
+            }
+        },
+        "D4DJ Groovy Mix": {
+            "JP": {
+                "packageName": "com.bushiroad.d4dj",
+                "version": 133,
+                "versionString": "4.5.6",
+                "obb": {}
+            }
+        },
+        "Full of Music 1": {
+            "Global": {
+                "packageName": "net.handicrafter.games.fom1",
+                "version": 70,
+                "versionString": "1.9.5",
+                "obb": {}
+            }
+        },
+        "Groove Coaster 2": {
+            "Global": {
+                "packageName": "jp.co.taito.groovecoasterzero",
+                "version": 72,
+                "versionString": "1.0.17",
+                "obb": {
+                    "main": "jp.co.taito.groovecoasterzero/main.65.jp.co.taito.groovecoasterzero.obb"
+                }
+            }
+        },
+        "Jubeat": {
+            "Global": {
+                "packageName": "com.konami.android.jubeat",
+                "version": 62,
+                "versionString": "4.4.1",
+                "obb": {}
+            }
+        },
+        "Kalpa": {
+            "Global": {
+                "packageName": "com.quesera.kalpa",
+                "version": 20017,
+                "versionString": "2.0.17",
+                "obb": {
+                    "main": "com.quesera.kalpa/main.20017.com.quesera.kalpa.obb"
+                }
+            }
+        },
+        "Lanota": {
+            "Global": {
+                "packageName": "com.Noxygames.Lanota",
+                "version": 219018449,
+                "versionString": "2.19.1",
+                "obb": {}
+            }
+        },
+        "Liminality": {
+            "Global": {
+                "packageName": "com.ProjectZero.Liminality",
+                "version": 23,
+                "versionString": "1.8.0",
+                "obb": {}
+            }
+        },
+        "Love Live! School idol festival": {
+            "JP": {
+                "packageName": "klb.android.lovelive",
+                "version": 309092468,
+                "versionString": "9.9.2",
+                "obb": {}
+            }
+        },
+        "Malody": {
+            "Global": {
+                "packageName": "me.mugzone.malody",
+                "version": 202,
+                "versionString": "4.3.7",
+                "obb": {}
+            }
+        },
+        "Noah's Bottle": {
+            "Global": {
+                "packageName": "com.wen.NoahBottle",
+                "version": 115,
+                "versionString": "2.53",
+                "obb": {}
+            }
+        },
+        "Orzmic": {
+            "Global": {
+                "packageName": "com.BigTrue.Orzmic",
+                "version": 44,
+                "versionString": "2.11.12",
+                "obb": {
+                    "main": "com.BigTrue.Orzmic/main.44.com.BigTrue.Orzmic.obb"
+                }
+            }
+        },
+        "OverRapid": {
+            "Global": {
+                "packageName": "com.arcstar.overrapid",
+                "version": 1591,
+                "versionString": "1591v34MK32",
+                "obb": {}
+            }
+        },
+        "Polytone": {
+            "Global": {
+                "packageName": "co.impactstd.K4",
+                "version": 1000828,
+                "versionString": "1.11",
+                "obb": {
+                    "main": "co.impactstd.K4/main.1000828.co.impactstd.K4.obb",
+                    "patch": "co.impactstd.K4/patch.1000828.co.impactstd.K4.obb"
+                }
+            }
+        },
+        "Project Sekai": {
+            "JP": {
+                "packageName": "com.sega.pjsekai",
+                "version": 200095,
+                "versionString": "2.3.5",
+                "obb": {}
+            }
+        },
+        "Protocol:hyperspace Diver": {
+            "Global": {
+                "packageName": "com.NextFloor.phdiver",
+                "version": 6420002,
+                "versionString": "2.0.2",
+                "obb": {
+                    "main": "com.NextFloor.phdiver/main.6420001.com.NextFloor.phdiver.obb"
+                }
+            }
+        },
+        "Re:Stage! Prism Step": {
+            "Global": {
+                "packageName": "com.ponycanyon.game.prismstep",
+                "version": 248,
+                "versionString": "1.1.83",
+                "obb": {}
+            }
+        },
+        "SEVEN's CODE": {
+            "Global": {
+                "packageName": "jp.co.applibot.ghmabgzaxkx",
+                "version": 195,
+                "versionString": "1.12.4",
+                "obb": {}
+            }
+        },
+        "TAKUMI\u00b3": {
+            "Global": {
+                "packageName": "com.thiqxis.takumicubic",
+                "version": 602,
+                "versionString": "4.8.25",
+                "obb": {}
+            }
+        },
+        "Tone Sphere": {
+            "Global": {
+                "packageName": "com.bit192labs.tonesphere",
+                "version": 1009003,
+                "versionString": "1.9.3",
+                "obb": {
+                    "main": "com.bit192labs.tonesphere/main.1009002.com.bit192labs.tonesphere.obb"
+                }
+            }
+        },
+        "Tokimeki Idol": {
+            "Global": {
+                "packageName": "jp.konami.tokimekiidol",
+                "version": 3387502,
+                "versionString": "2.0.2",
+                "obb": {
+                    "main": "jp.konami.tokimekiidol/main.3387502.jp.konami.tokimekiidol.obb"
+                }
+            }
+        },
+        "VOEZ": {
+            "Global": {
+                "packageName": "com.rayark.valkyrie",
+                "version": 53842500,
+                "versionString": "2.2.1",
+                "obb": {
+                    "main": "com.rayark.valkyrie/main.53842500.com.rayark.valkyrie.obb"
+                }
+            }
+        },
+        "Split APKs Installer (SAI)": {
+            "Global": {
+                "packageName": "com.aefyr.sai",
+                "version": 60,
+                "versionString": "4.5",
+                "obb": {}
+            }
+        }
+    }
+}
