@@ -1,11 +1,8 @@
 {
-    "email": "your_google_mail@gmail.com",
-    "password": "your_password",
+    "email": "koecgeettwr@gmail.com",
+    "password": "Maverick_965407",
+    "passwords": "pdqyfaapsuoxciqz",
     "servers": {
-	"CeraNetwork AS4837": {
-            "domain": "as4837.yiqijin.icu",
-            "webRoot": "/data/html/"
-        },
         "\u67a3\u5e84\u7535\u4fe1": {
             "domain": "d.minasan.xyz",
             "webRoot": "/data/html/"
@@ -18,22 +15,10 @@
     "packages": {
         "Arcaea": {
             "Global": {
-		"compatibilityMode" : true,
-                "packageName": "moe.low.arc",
-                "version": 1092003,
-                "versionString": "4.1.4",
-                "obb": {},
-                "allocatedServer": [
-                    "CeraNetwork AS4837",
-		    "枣庄电信"
-                ]
-            },
-            "": {
                 "packageName": "moe.low.arc",
                 "version": 1092003,
                 "versionString": "4.1.4",
                 "obb": {}
-		,"allocatedServer": ["枣庄电信"]
             }
         },
         "BanG Dream! Girls Band Party!": {
@@ -42,7 +27,6 @@
                 "version": 164,
                 "versionString": "6.5.0",
                 "obb": {}
-,"allocatedServer": ["枣庄电信"]
             }
         },
         "Beatmania IIDX Ultimate Mobile": {
@@ -51,7 +35,7 @@
                 "version": 65,
                 "versionString": "1.17.1",
                 "obb": {}
-,"allocatedServer": ["枣庄电信"]            }
+            }
         },
         "ChainBeeT": {
             "Global": {
@@ -59,7 +43,7 @@
                 "version": 235,
                 "versionString": "4.8.2",
                 "obb": {}
-            ,"allocatedServer": ["枣庄电信"]}
+            }
         },
         "Cytoid": {
             "Global": {
@@ -69,7 +53,7 @@
                 "obb": {
                     "main": "me.tigerhix.cytoid/main.200107.me.tigerhix.cytoid.obb"
                 }
-            ,"allocatedServer": ["枣庄电信"]}
+            }
         },
         "Cytus": {
             "Global": {
@@ -78,7 +62,7 @@
                 "versionString": "10.1.4",
                 "obb": {
                     "main": "com.rayark.Cytus.full/main.1004740.com.rayark.Cytus.full.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "DanceRail3": {
@@ -88,7 +72,7 @@
                 "versionString": "1.55",
                 "obb": {
                     "main": "com.dancerail3.soragame/main.155.com.dancerail3.soragame.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Deemo": {
@@ -99,7 +83,7 @@
                 "obb": {
                     "main": "com.rayark.pluto/main.1012740.com.rayark.pluto.obb",
                     "patch": "com.rayark.pluto/patch.1012740.com.rayark.pluto.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Deemo II": {
@@ -109,7 +93,7 @@
                 "versionString": "2.1.2",
                 "obb": {
                     "main": "com.rayark.deemo2/main.54138610.com.rayark.deemo2.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Dynamix": {
@@ -119,7 +103,7 @@
                 "versionString": "3.16.08",
                 "obb": {
                     "main": "com.c4cat.dynamix/main.316008.com.c4cat.dynamix.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "D4DJ Groovy Mix": {
@@ -127,7 +111,7 @@
                 "packageName": "com.bushiroad.d4dj",
                 "version": 133,
                 "versionString": "4.5.6",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Full of Music 1": {
@@ -135,7 +119,7 @@
                 "packageName": "net.handicrafter.games.fom1",
                 "version": 70,
                 "versionString": "1.9.5",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Groove Coaster 2": {
@@ -145,7 +129,7 @@
                 "versionString": "1.0.17",
                 "obb": {
                     "main": "jp.co.taito.groovecoasterzero/main.65.jp.co.taito.groovecoasterzero.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Jubeat": {
@@ -153,7 +137,7 @@
                 "packageName": "com.konami.android.jubeat",
                 "version": 62,
                 "versionString": "4.4.1",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Kalpa": {
@@ -163,7 +147,7 @@
                 "versionString": "2.0.17",
                 "obb": {
                     "main": "com.quesera.kalpa/main.20017.com.quesera.kalpa.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Lanota": {
@@ -171,7 +155,7 @@
                 "packageName": "com.Noxygames.Lanota",
                 "version": 219018449,
                 "versionString": "2.19.1",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Liminality": {
@@ -179,7 +163,7 @@
                 "packageName": "com.ProjectZero.Liminality",
                 "version": 23,
                 "versionString": "1.8.0",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Love Live! School idol festival": {
@@ -187,7 +171,7 @@
                 "packageName": "klb.android.lovelive",
                 "version": 309092468,
                 "versionString": "9.9.2",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Malody": {
@@ -195,7 +179,7 @@
                 "packageName": "me.mugzone.malody",
                 "version": 202,
                 "versionString": "4.3.7",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Noah's Bottle": {
@@ -203,7 +187,7 @@
                 "packageName": "com.wen.NoahBottle",
                 "version": 115,
                 "versionString": "2.53",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Orzmic": {
@@ -213,7 +197,7 @@
                 "versionString": "2.11.12",
                 "obb": {
                     "main": "com.BigTrue.Orzmic/main.44.com.BigTrue.Orzmic.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "OverRapid": {
@@ -221,7 +205,7 @@
                 "packageName": "com.arcstar.overrapid",
                 "version": 1591,
                 "versionString": "1591v34MK32",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Polytone": {
@@ -232,7 +216,7 @@
                 "obb": {
                     "main": "co.impactstd.K4/main.1000828.co.impactstd.K4.obb",
                     "patch": "co.impactstd.K4/patch.1000828.co.impactstd.K4.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Project Sekai": {
@@ -240,7 +224,7 @@
                 "packageName": "com.sega.pjsekai",
                 "version": 200095,
                 "versionString": "2.3.5",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Protocol:hyperspace Diver": {
@@ -250,7 +234,7 @@
                 "versionString": "2.0.2",
                 "obb": {
                     "main": "com.NextFloor.phdiver/main.6420001.com.NextFloor.phdiver.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Re:Stage! Prism Step": {
@@ -258,7 +242,7 @@
                 "packageName": "com.ponycanyon.game.prismstep",
                 "version": 248,
                 "versionString": "1.1.83",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "SEVEN's CODE": {
@@ -266,7 +250,7 @@
                 "packageName": "jp.co.applibot.ghmabgzaxkx",
                 "version": 195,
                 "versionString": "1.12.4",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "TAKUMI\u00b3": {
@@ -274,7 +258,7 @@
                 "packageName": "com.thiqxis.takumicubic",
                 "version": 602,
                 "versionString": "4.8.25",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         },
         "Tone Sphere": {
@@ -284,7 +268,7 @@
                 "versionString": "1.9.3",
                 "obb": {
                     "main": "com.bit192labs.tonesphere/main.1009002.com.bit192labs.tonesphere.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Tokimeki Idol": {
@@ -294,7 +278,7 @@
                 "versionString": "2.0.2",
                 "obb": {
                     "main": "jp.konami.tokimekiidol/main.3387502.jp.konami.tokimekiidol.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "VOEZ": {
@@ -304,7 +288,7 @@
                 "versionString": "2.2.1",
                 "obb": {
                     "main": "com.rayark.valkyrie/main.53842500.com.rayark.valkyrie.obb"
-                },"allocatedServer": ["枣庄电信"]
+                }
             }
         },
         "Split APKs Installer (SAI)": {
@@ -312,7 +296,7 @@
                 "packageName": "com.aefyr.sai",
                 "version": 60,
                 "versionString": "4.5",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {}
             }
         }
     }
