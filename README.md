@@ -10,6 +10,8 @@ urllib3 < 1.26 (Tested with 1.25.11)
 
 ## Configuration
 
-- (Recommended) Change the emulated device to Google Pixel 2 to avoid incompatibility (check `device.properties`)
+just check `config.json` and you'll figure it out.
+
+some game contain a standalone apk version (without obb) and also a apk + obb version. If you want the prior one, you may wish to set the subversion's "compatibilityMode" as true (e.g. Arcaea in the given config.json).
 
 *To be completed...*
