@@ -32,7 +32,7 @@ for game in config["packages"].items():
 
     gameName = game[0]
     print(gameName)
-    
+
     gameSubversions = game[1]
 
     readme = readme + "## " + gameName + "\n\n"
@@ -48,8 +48,12 @@ for game in config["packages"].items():
         subversionInfo = subversion[1]
 
         packageName = subversionInfo["packageName"]
-        version = subversionInfo["version"]
         allocatedServer = subversionInfo["allocatedServer"]
+
+        try:
+            manualMode = subversionInfo["manualMode"]
+        except Exception as e:
+            manualMode = False
 
         try:
             compatibilityMode = subversionInfo["compatibilityMode"]
@@ -58,16 +62,18 @@ for game in config["packages"].items():
         except Exception as e:
             server = api28Server
 
-        # Fetch game version
-        details = server.details(packageName)
-        #print(details["details"]["appDetails"])
-        newVersion = details["details"]["appDetails"]["versionCode"]
-        versionString = details["details"]["appDetails"]["versionString"]
+        if not manualMode:
+            version = subversionInfo["version"]
+            # Fetch game version
+            details = server.details(packageName)
+            #print(details["details"]["appDetails"])
+            newVersion = details["details"]["appDetails"]["versionCode"]
+            versionString = details["details"]["appDetails"]["versionString"]
 
         obbList = {}
 
-        if version < int(newVersion):
-        
+        if not manualMode and version < int(newVersion):
+
             print("Update found for " + gameName + " " + locale + ", triggering APK download...")
 
             # Create Folder
@@ -77,7 +83,11 @@ for game in config["packages"].items():
                 pass
 
             # Download game files
-            download = server.download(packageName, expansion_files=True)
+
+            try:
+                download = server.download(packageName, expansion_files=True)
+            except Exception as e:
+                download = server.download(packageName, expansion_files=True)
 
             # Write APK file
             apkPath = packageName + "/" + packageName + "_" + versionString + ".apk"
@@ -85,7 +95,7 @@ for game in config["packages"].items():
                 for chunk in download.get('file').get('data'):
                     first.write(chunk)
 
-            readme = readme + "### " + versionString + " " + locale + " Google Play\n\n"
+            readme = readme + "### " + versionString + " " + locale + "\n\n"
 
             for serverInfo in config["servers"].items():
                 if serverInfo[0] in allocatedServer:
@@ -112,13 +122,13 @@ for game in config["packages"].items():
             for serverInfo in config["servers"].items():
                 if serverInfo[0] in allocatedServer:
                     try:
-                        command = "ssh root@" + serverInfo[1]["domain"] + " \"mkdir " + serverInfo[1]["webRoot"] + packageName + "/\""
+                        command = "ssh -p " + serverInfo[1]["sshPort"] + " root@" + serverInfo[1]["domain"] + " \"mkdir " + serverInfo[1]["webRoot"] + packageName + "/\""
                         print(command)
                         os.system(command)
                     except Exception as e:
                         pass
 
-                    command = "scp ./temp/" + packageName + "/* root@" + serverInfo[1]["domain"] + ":" + serverInfo[1]["webRoot"] + packageName + "/"
+                    command = "scp -P " + serverInfo[1]["sshPort"] + " ./temp/" + packageName + "/* root@" + serverInfo[1]["domain"] + ":" + serverInfo[1]["webRoot"] + packageName + "/"
                     print(command)
                     os.system(command)
 
@@ -129,18 +139,16 @@ for game in config["packages"].items():
                 currentConfig = json.load(text)
                 text.close()
             currentConfig["packages"][gameName][locale] = \
-                {"packageName" : packageName, "version" : newVersion, "versionString" : versionString, "obb": obbList}
+                {"packageName" : packageName, "version" : newVersion, "versionString" : versionString, "obb": obbList, "allocatedServer": allocatedServer}
             dumpedConfig = json.dumps(currentConfig, indent=4, separators=(',', ': '))
 
             with open("./config.json", "w", encoding = "UTF-8") as text:
                 text.write(dumpedConfig)
                 text.close()
-                
 
-            
         else:
             # Append APK info
-            readme = readme + "### " + versionString + " " + locale + " Google Play\n\n"
+            readme = readme + "### " + versionString + " " + locale + "\n\n"
             for serverInfo in config["servers"].items():
                 if serverInfo[0] in allocatedServer:
                     readme = readme + "[" + serverInfo[0] + "](https://" + serverInfo[1]["domain"] + "/" + packageName + "/" + \
