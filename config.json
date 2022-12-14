@@ -1,12 +1,24 @@
 {
-    "email": "your_google_mail@gmail.com",
+    "email": "your_gmail",
     "password": "your_password",
     "servers": {
-	"CeraNetwork AS4837": {
+        "Internet Initiative Japan": {
+            "sshPort": "22",
+            "domain": "iij-v3.616.sb",
+            "webRoot": "/data/html/"
+        },
+        "Nippon Telegraph & Telephone": {
+            "sshPort": "22122",
+            "domain": "iij-v2.616.sb",
+            "webRoot": "/data/html/"
+        },
+        "CeraNetwork AS4837": {
+            "sshPort": "22",
             "domain": "as4837.yiqijin.icu",
             "webRoot": "/data/html/"
         },
         "\u67a3\u5e84\u7535\u4fe1": {
+            "sshPort": "22",
             "domain": "d.minasan.xyz",
             "webRoot": "/data/html/"
         }
@@ -17,302 +29,496 @@
     },
     "packages": {
         "Arcaea": {
-            "Global": {
-		"compatibilityMode" : true,
+            "Google Play": {
+                "compatibilityMode": true,
                 "packageName": "moe.low.arc",
                 "version": 1092003,
                 "versionString": "4.1.4",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "CeraNetwork AS4837",
-		    "枣庄电信"
+                    "\u67a3\u5e84\u7535\u4fe1"
                 ]
-            },
-            "": {
-                "packageName": "moe.low.arc",
-                "version": 1092003,
-                "versionString": "4.1.4",
-                "obb": {}
-		,"allocatedServer": ["枣庄电信"]
             }
         },
         "BanG Dream! Girls Band Party!": {
-            "JP": {
+            "\u65e5\u670d": {
                 "packageName": "jp.co.craftegg.band",
                 "version": 164,
                 "versionString": "6.5.0",
-                "obb": {}
-,"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u56fd\u9645\u670d": {
+                "packageName": "com.bushiroad.en.bangdreamgbp",
+                "version": 92,
+                "versionString": "5.10.0",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u97e9\u670d": {
+                "packageName": "com.kakaogames.bangdreamkr",
+                "version": 265,
+                "versionString": "5.10.0",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u4e2d\u56fd\u53f0\u6e7e\u670d": {
+                "packageName": "net.gamon.bdTW",
+                "version": 103,
+                "versionString": "6.1.4",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Beatmania IIDX Ultimate Mobile": {
-            "Global": {
+            "Google Play": {
                 "packageName": "jp.konami.bm2dxum",
                 "version": 65,
                 "versionString": "1.17.1",
-                "obb": {}
-,"allocatedServer": ["枣庄电信"]            }
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
         },
         "ChainBeeT": {
-            "Global": {
+            "Google Play": {
                 "packageName": "jp.matsu4512.chainbeet",
-                "version": 235,
-                "versionString": "4.8.2",
-                "obb": {}
-            ,"allocatedServer": ["枣庄电信"]}
+                "version": 236,
+                "versionString": "4.9.0",
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
         },
         "Cytoid": {
-            "Global": {
+            "Google Play": {
                 "packageName": "me.tigerhix.cytoid",
                 "version": 200107,
                 "versionString": "2.1.1",
                 "obb": {
                     "main": "me.tigerhix.cytoid/main.200107.me.tigerhix.cytoid.obb"
-                }
-            ,"allocatedServer": ["枣庄电信"]}
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
         },
         "Cytus": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.rayark.Cytus.full",
                 "version": 1004740,
                 "versionString": "10.1.4",
                 "obb": {
                     "main": "com.rayark.Cytus.full/main.1004740.com.rayark.Cytus.full.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "DanceRail3": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.dancerail3.soragame",
                 "version": 155,
                 "versionString": "1.55",
                 "obb": {
                     "main": "com.dancerail3.soragame/main.155.com.dancerail3.soragame.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Deemo": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.rayark.pluto",
                 "version": 1012740,
                 "versionString": "5.0.4",
                 "obb": {
                     "main": "com.rayark.pluto/main.1012740.com.rayark.pluto.obb",
                     "patch": "com.rayark.pluto/patch.1012740.com.rayark.pluto.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Deemo II": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.rayark.deemo2",
                 "version": 54138610,
                 "versionString": "2.1.2",
                 "obb": {
                     "main": "com.rayark.deemo2/main.54138610.com.rayark.deemo2.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Dynamix": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.c4cat.dynamix",
                 "version": 316008,
                 "versionString": "3.16.08",
                 "obb": {
                     "main": "com.c4cat.dynamix/main.316008.com.c4cat.dynamix.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "D4DJ Groovy Mix": {
-            "JP": {
+            "\u65e5\u670d": {
                 "packageName": "com.bushiroad.d4dj",
-                "version": 133,
-                "versionString": "4.5.6",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "version": 134,
+                "versionString": "4.5.7",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u56fd\u9645\u670d": {
+                "packageName": "com.bushiroad.en.d4dj",
+                "version": 79,
+                "versionString": "4.5.25",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u4e2d\u56fd\u53f0\u6e7e\u670d": {
+                "packageName": "net.gamon.djTW",
+                "version": 31,
+                "versionString": "4.0.8",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Full of Music 1": {
-            "Global": {
+            "Google Play": {
                 "packageName": "net.handicrafter.games.fom1",
                 "version": 70,
                 "versionString": "1.9.5",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Groove Coaster 2": {
-            "Global": {
+            "Google Play": {
                 "packageName": "jp.co.taito.groovecoasterzero",
                 "version": 72,
                 "versionString": "1.0.17",
                 "obb": {
                     "main": "jp.co.taito.groovecoasterzero/main.65.jp.co.taito.groovecoasterzero.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Jubeat": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.konami.android.jubeat",
                 "version": 62,
                 "versionString": "4.4.1",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Kalpa": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.quesera.kalpa",
                 "version": 20017,
                 "versionString": "2.0.17",
                 "obb": {
                     "main": "com.quesera.kalpa/main.20017.com.quesera.kalpa.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Lanota": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.Noxygames.Lanota",
                 "version": 219018449,
                 "versionString": "2.19.1",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
+        },
+	"Lethe": {
+            "Google Play": {
+		"manualMode": true,
+                "versionString": "1.7.9",
+                "packageName": "com.cyou.mrd.letheob.gp",
+                "obb": {},
+                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
             }
         },
         "Liminality": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.ProjectZero.Liminality",
                 "version": 23,
                 "versionString": "1.8.0",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Love Live! School idol festival": {
-            "JP": {
+            "\u65e5\u670d": {
                 "packageName": "klb.android.lovelive",
                 "version": 309092468,
                 "versionString": "9.9.2",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u56fd\u9645\u670d": {
+                "packageName": "klb.android.lovelive_en",
+                "version": 1309092469,
+                "versionString": "9.9.2",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Malody": {
-            "Global": {
+            "Android Google Play": {
                 "packageName": "me.mugzone.malody",
                 "version": 202,
                 "versionString": "4.3.7",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+	    "Windows": {
+		"manualMode": true,
+                "versionString": "4.3.7",
+                "packageName": "malody_windows",
+                "obb": {},
+                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
             }
         },
         "Noah's Bottle": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.wen.NoahBottle",
                 "version": 115,
                 "versionString": "2.53",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Orzmic": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.BigTrue.Orzmic",
                 "version": 44,
                 "versionString": "2.11.12",
                 "obb": {
                     "main": "com.BigTrue.Orzmic/main.44.com.BigTrue.Orzmic.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "OverRapid": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.arcstar.overrapid",
                 "version": 1591,
                 "versionString": "1591v34MK32",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Polytone": {
-            "Global": {
+            "Google Play": {
                 "packageName": "co.impactstd.K4",
                 "version": 1000828,
                 "versionString": "1.11",
                 "obb": {
                     "main": "co.impactstd.K4/main.1000828.co.impactstd.K4.obb",
                     "patch": "co.impactstd.K4/patch.1000828.co.impactstd.K4.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Project Sekai": {
-            "JP": {
+            "\u65e5\u670d": {
                 "packageName": "com.sega.pjsekai",
                 "version": 200095,
                 "versionString": "2.3.5",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u4e9a\u670d[\u7e41\u4f53\u4e2d\u6587]": {
+                "packageName": "com.hermes.mk.asia",
+                "version": 7868,
+                "versionString": "1.13.3",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Protocol:hyperspace Diver": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.NextFloor.phdiver",
                 "version": 6420002,
                 "versionString": "2.0.2",
                 "obb": {
                     "main": "com.NextFloor.phdiver/main.6420001.com.NextFloor.phdiver.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Re:Stage! Prism Step": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.ponycanyon.game.prismstep",
                 "version": 248,
                 "versionString": "1.1.83",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "SEVEN's CODE": {
-            "Global": {
+            "Google Play": {
                 "packageName": "jp.co.applibot.ghmabgzaxkx",
                 "version": 195,
                 "versionString": "1.12.4",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
+        },
+	"Stellights": {
+            "Google Play": {
+		"manualMode": true,
+                "versionString": "2.1.8",
+                "packageName": "com.collesta.StellightMusicGame",
+                "obb": {},
+                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
             }
         },
         "TAKUMI\u00b3": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.thiqxis.takumicubic",
-                "version": 602,
-                "versionString": "4.8.25",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "version": 607,
+                "versionString": "4.8.27",
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Tone Sphere": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.bit192labs.tonesphere",
                 "version": 1009003,
                 "versionString": "1.9.3",
                 "obb": {
                     "main": "com.bit192labs.tonesphere/main.1009002.com.bit192labs.tonesphere.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Tokimeki Idol": {
-            "Global": {
+            "Google Play": {
                 "packageName": "jp.konami.tokimekiidol",
                 "version": 3387502,
                 "versionString": "2.0.2",
                 "obb": {
                     "main": "jp.konami.tokimekiidol/main.3387502.jp.konami.tokimekiidol.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "VOEZ": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.rayark.valkyrie",
                 "version": 53842500,
                 "versionString": "2.2.1",
                 "obb": {
                     "main": "com.rayark.valkyrie/main.53842500.com.rayark.valkyrie.obb"
-                },"allocatedServer": ["枣庄电信"]
+                },
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
+        },
+	"Zyon载音": {
+            "Google Play": {
+		"manualMode": true,
+                "versionString": "202",
+                "packageName": "com.aquatrax.zyon",
+                "obb": {},
+                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
             }
         },
         "Split APKs Installer (SAI)": {
-            "Global": {
+            "Google Play": {
                 "packageName": "com.aefyr.sai",
                 "version": 60,
                 "versionString": "4.5",
-                "obb": {},"allocatedServer": ["枣庄电信"]
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         }
     }
