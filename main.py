@@ -4,7 +4,7 @@ import os
 import json
 
 api26Server = GooglePlayAPI("ja_JP", "Asia/Tokyo", "crackling")
-api28Server = GooglePlayAPI("ja_JP", "Asia/Tokyo")
+api31Server = GooglePlayAPI("ja_JP", "Asia/Tokyo")
 
 def removeAllFiles(delPath):
     delList = os.listdir(delPath)
@@ -26,25 +26,21 @@ with open("./README.md.template", "r", encoding = "UTF-8") as template:
 # Login
 print('Logging in with email and password')
 api26Server.login(config["email"], config["password"], None, None)
-api28Server.login(config["email"], config["password"], None, None)
+api31Server.login(config["email"], config["password"], None, None)
 
 for game in config["packages"].items():
 
+    # Load game details from config
     gameName = game[0]
-    print(gameName)
-
     gameSubversions = game[1]
+
+    print(gameName)
 
     readme = readme + "## " + gameName + "\n\n"
 
     for subversion in gameSubversions.items():
 
         locale = subversion[0]
-
-        # Just cleaning up the config file and eliminate the unnecessary Global setting...
-        if locale == "Global":
-            locale = ""
-
         subversionInfo = subversion[1]
 
         packageName = subversionInfo["packageName"]
@@ -55,20 +51,23 @@ for game in config["packages"].items():
         except Exception as e:
             manualMode = False
 
-        try:
-            compatibilityMode = subversionInfo["compatibilityMode"]
-            if compatibilityMode:
-                server = api26Server
-        except Exception as e:
-            server = api28Server
+        server = api26Server
+
+        versionString = subversionInfo["versionString"]
 
         if not manualMode:
             version = subversionInfo["version"]
             # Fetch game version
-            details = server.details(packageName)
-            #print(details["details"]["appDetails"])
-            newVersion = details["details"]["appDetails"]["versionCode"]
-            versionString = details["details"]["appDetails"]["versionString"]
+            try:
+                details = server.details(packageName)
+                newVersion = details["details"]["appDetails"]["versionCode"]
+                versionString = details["details"]["appDetails"]["versionString"]
+            except Exception as _:
+                print("Compatability option not available, switching to API31...")
+                server = api31Server
+                details = server.details(packageName)
+                newVersion = details["details"]["appDetails"]["versionCode"]
+                versionString = details["details"]["appDetails"]["versionString"]
 
         obbList = {}
 
@@ -95,13 +94,32 @@ for game in config["packages"].items():
                 for chunk in download.get('file').get('data'):
                     first.write(chunk)
 
-            readme = readme + "### " + versionString + " " + locale + "\n\n"
+            print("Extracting Split APK...")
+
+            hasSplitAPK = False
+
+            for splits in download["splits"]:
+                hasSplitAPK = True
+                splitPath = packageName + "/" + splits["name"] + '.apk'
+                with open("./temp/" + splitPath, "wb") as third:
+                    for chunk in splits.get('file').get('data'):
+                        third.write(chunk)
+            
+            if hasSplitAPK:
+                print("Generating APKS File")
+                os.system("mv ./temp/" + apkPath + " ./temp/" + packageName + "/base.apk")
+                apkPath = apkPath + "s"
+                os.system("zip -r ./temp/" + apkPath + " ./temp/" + packageName + "/*.apk")
+                os.system("rm ./temp/" + packageName + "/*.apk")
+                readme = readme + "### " + versionString + " " + locale + " APKS\n\n"      
+            else:
+                readme = readme + "### " + versionString + " " + locale + "\n\n"
 
             for serverInfo in config["servers"].items():
                 if serverInfo[0] in allocatedServer:
                     readme = readme + "[" + serverInfo[0] + "](https://" + serverInfo[1]["domain"] + "/" + apkPath + ")\n\n"
 
-            print("Downloading datapacks...")
+            print("Extracting datapacks...")
 
             # Write OBB file
             for obb in download["additionalData"]:
