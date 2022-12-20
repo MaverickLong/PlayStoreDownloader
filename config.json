@@ -2,6 +2,11 @@
     "email": "your_gmail",
     "password": "your_password",
     "servers": {
+        "China Mobile International": {
+            "sshPort": "22",
+            "domain": "cmi.616.sb",
+            "webRoot": "/data/html/"
+        },
         "Internet Initiative Japan": {
             "sshPort": "22",
             "domain": "iij-v3.616.sb",
@@ -28,6 +33,20 @@
         "docRoot": "/data/vue/docs/"
     },
     "packages": {
+        "\u8303\u5f0f\uff1a\u8d77\u6e90 Paradigm: Reboot": {
+            "Google Play": {
+                "packageName": "com.tunergames.paradigm",
+                "version": 1034,
+                "versionString": "1.0.1.2",
+                "obb": {},
+                "allocatedServer": [
+                    "China Mobile International",
+                    "Internet Initiative Japan",
+                    "CeraNetwork AS4837",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
+        },
         "Arcaea": {
             "Google Play": {
                 "compatibilityMode": true,
@@ -36,6 +55,7 @@
                 "versionString": "4.1.4",
                 "obb": {},
                 "allocatedServer": [
+                    "China Mobile International",
                     "Internet Initiative Japan",
                     "CeraNetwork AS4837",
                     "\u67a3\u5e84\u7535\u4fe1"
@@ -65,8 +85,8 @@
             },
             "\u97e9\u670d": {
                 "packageName": "com.kakaogames.bangdreamkr",
-                "version": 265,
-                "versionString": "5.10.0",
+                "version": 276,
+                "versionString": "6.2.0",
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -98,8 +118,8 @@
         "ChainBeeT": {
             "Google Play": {
                 "packageName": "jp.matsu4512.chainbeet",
-                "version": 236,
-                "versionString": "4.9.0",
+                "version": 237,
+                "versionString": "4.9.1",
                 "obb": {},
                 "allocatedServer": [
                     "\u67a3\u5e84\u7535\u4fe1"
@@ -198,8 +218,8 @@
             },
             "\u56fd\u9645\u670d": {
                 "packageName": "com.bushiroad.en.d4dj",
-                "version": 79,
-                "versionString": "4.5.25",
+                "version": 80,
+                "versionString": "4.5.60",
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -208,8 +228,8 @@
             },
             "\u4e2d\u56fd\u53f0\u6e7e\u670d": {
                 "packageName": "net.gamon.djTW",
-                "version": 31,
-                "versionString": "4.0.8",
+                "version": 32,
+                "versionString": "4.0.9",
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -276,13 +296,19 @@
                 ]
             }
         },
-	"Lethe": {
+        "Lethe": {
             "Google Play": {
-		"manualMode": true,
+                "manualMode": true,
                 "versionString": "1.7.9",
                 "packageName": "com.cyou.mrd.letheob.gp",
-                "obb": {},
-                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
+                "obb": {
+                    "main": "com.cyou.mrd.letheob.gp/main.178.com.cyou.mrd.letheob.gp.obb",
+                    "patch": "com.cyou.mrd.letheob.gp/patch.179.com.cyou.mrd.letheob.gp.obb"
+                },
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Liminality": {
@@ -299,8 +325,8 @@
         "Love Live! School idol festival": {
             "\u65e5\u670d": {
                 "packageName": "klb.android.lovelive",
-                "version": 309092468,
-                "versionString": "9.9.2",
+                "version": 309093229,
+                "versionString": "9.9.3",
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -309,8 +335,8 @@
             },
             "\u56fd\u9645\u670d": {
                 "packageName": "klb.android.lovelive_en",
-                "version": 1309092469,
-                "versionString": "9.9.2",
+                "version": 1309093230,
+                "versionString": "9.9.3",
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -328,12 +354,16 @@
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             },
-	    "Windows": {
-		"manualMode": true,
+            "Windows": {
+                "suffix": "7z",
+                "manualMode": true,
                 "versionString": "4.3.7",
                 "packageName": "malody_windows",
                 "obb": {},
-                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Noah's Bottle": {
@@ -371,6 +401,18 @@
                 ]
             }
         },
+        "Pianista": {
+            "Google Play": {
+                "packageName": "com.superb.pianista",
+                "version": 154,
+                "versionString": "2.4.3",
+                "obb": {},
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
+        },
         "Polytone": {
             "Google Play": {
                 "packageName": "co.impactstd.K4",
@@ -388,8 +430,8 @@
         "Project Sekai": {
             "\u65e5\u670d": {
                 "packageName": "com.sega.pjsekai",
-                "version": 200095,
-                "versionString": "2.3.5",
+                "version": 200098,
+                "versionString": "2.4.0",
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -423,10 +465,23 @@
         "Re:Stage! Prism Step": {
             "Google Play": {
                 "packageName": "com.ponycanyon.game.prismstep",
-                "version": 248,
-                "versionString": "1.1.83",
+                "version": 253,
+                "versionString": "1.1.84",
                 "obb": {},
                 "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
+        },
+        "Rizline": {
+            "Google Play": {
+                "packageName": "com.leiting.RizlineHk.android",
+                "version": 16,
+                "versionString": "1.0.2",
+                "obb": {},
+                "allocatedServer": [
+                    "China Mobile International",
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -442,13 +497,18 @@
                 ]
             }
         },
-	"Stellights": {
+        "Stellights": {
             "Google Play": {
-		"manualMode": true,
+                "manualMode": true,
                 "versionString": "2.1.8",
                 "packageName": "com.collesta.StellightMusicGame",
-                "obb": {},
-                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
+                "obb": {
+                    "main": "com.collesta.StellightMusicGame/main.115.com.collesta.StellightMusicGame.obb"
+                },
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "TAKUMI\u00b3": {
@@ -501,13 +561,18 @@
                 ]
             }
         },
-	"Zyon载音": {
+        "Zyon\u8f7d\u97f3": {
             "Google Play": {
-		"manualMode": true,
+                "manualMode": true,
                 "versionString": "202",
                 "packageName": "com.aquatrax.zyon",
-                "obb": {},
-                "allocatedServer": ["Internet Initiative Japan","枣庄电信"]
+                "obb": {
+                    "main": "com.aquatrax.zyon/main.202.com.aquatrax.zyon.obb"
+                },
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
             }
         },
         "Split APKs Installer (SAI)": {
