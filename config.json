@@ -2,6 +2,11 @@
     "email": "your_gmail",
     "password": "your_password",
     "servers": {
+        "Internet Initiative Japan": {
+            "sshPort": "22",
+            "domain": "iij-v3.616.sb",
+            "webRoot": "/data/html/"
+        },
         "China Mobile International V2": {
             "sshPort": "22",
             "domain": "cmi-v2.616.sb",
@@ -10,11 +15,6 @@
         "China Mobile International": {
             "sshPort": "22",
             "domain": "cmi.616.sb",
-            "webRoot": "/data/html/"
-        },
-        "Internet Initiative Japan": {
-            "sshPort": "22",
-            "domain": "iij-v3.616.sb",
             "webRoot": "/data/html/"
         },
         "Nippon Telegraph & Telephone": {
@@ -46,7 +46,6 @@
                 "versionString": "1.0.1.2",
                 "obb": {},
                 "allocatedServer": [
-                    "China Mobile International",
                     "CeraNetwork AS4837",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
@@ -56,11 +55,10 @@
             "\u56fd\u884cC\u7248": {
                 "manualMode": true,
                 "packageName": "moe.low.arc",
-                "versionString": "4.1.7c",
+                "versionString": "4.1.9c",
                 "obb": {},
                 "allocatedServer": [
                     "China Mobile International V2",
-                    "China Mobile International",
                     "Internet Initiative Japan"
                 ]
             },
@@ -71,7 +69,6 @@
                 "versionString": "4.1.9",
                 "obb": {},
                 "allocatedServer": [
-                    "China Mobile International",
                     "China Mobile International V2",
                     "Internet Initiative Japan",
                     "CeraNetwork AS4837",
@@ -240,9 +237,10 @@
         },
         "D4DJ Groovy Mix": {
             "\u65e5\u670d": {
+                "suffix": "apk",
                 "packageName": "com.bushiroad.d4dj",
-                "version": 134,
-                "versionString": "4.5.7",
+                "version": 135,
+                "versionString": "4.5.8",
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -315,10 +313,10 @@
             "Google Play": {
                 "suffix": "apk",
                 "packageName": "com.quesera.kalpa",
-                "version": 20100,
-                "versionString": "2.1.0",
+                "version": 20101,
+                "versionString": "2.1.1",
                 "obb": {
-                    "main": "com.quesera.kalpa/main.20100.com.quesera.kalpa.obb"
+                    "main": "com.quesera.kalpa/main.20101.com.quesera.kalpa.obb"
                 },
                 "allocatedServer": [
                     "Internet Initiative Japan",
@@ -450,6 +448,66 @@
                 "obb": {},
                 "allocatedServer": [
                     "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            }
+        },
+        "Phigros": {
+            "Google Play": {
+                "suffix": "apk",
+                "packageName": "com.PigeonGames.Phigros",
+                "version": 69,
+                "versionString": "2.4.4",
+                "obb": {
+                    "main": "com.PigeonGames.Phigros/main.69.com.PigeonGames.Phigros.obb"
+                },
+                "allocatedServer": [
+                    "Internet Initiative Japan",
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "2022 \u611a\u4eba\u8282": {
+                "manualMode": true,
+                "packageName": "com.PigeonGames.Phigros",
+                "versionString": "2.1.4",
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "2021 \u611a\u4eba\u8282": {
+                "manualMode": true,
+                "packageName": "com.PigeonGames.Phigros",
+                "versionString": "1.6.5",
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "2020 \u611a\u4eba\u8282": {
+                "manualMode": true,
+                "packageName": "com.PigeonGames.Phigros",
+                "versionString": "1.4.1",
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u53ef\u4ee5\u65e0\u9650\u5237MB\u7684\u7248\u672c": {
+                "manualMode": true,
+                "packageName": "com.PigeonGames.Phigros",
+                "versionString": "1.4.3",
+                "obb": {},
+                "allocatedServer": [
+                    "\u67a3\u5e84\u7535\u4fe1"
+                ]
+            },
+            "\u521d\u7248": {
+                "manualMode": true,
+                "packageName": "com.PigeonGames.Phigros",
+                "versionString": "1.0.0",
+                "obb": {},
+                "allocatedServer": [
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
