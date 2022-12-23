@@ -50,7 +50,6 @@ def updateConfig(suffix, packageName, newVersion, versionString, obbList, alloca
 
 
 def doUpgrade(gameName, locale, packageName, versionString, allocatedServer, server, newVersion):
-    global readme
     print("Update found for " + gameName + " " +
           locale + ", triggering APK download...")
 
@@ -85,18 +84,9 @@ def doUpgrade(gameName, locale, packageName, versionString, allocatedServer, ser
         os.system("zip -r ./temp/" + apkPath +
                   " ./temp/" + packageName + "/*.apk")
         os.system("rm ./temp/" + packageName + "/*.apk")
-        readme = readme + "### " + versionString + " " + locale + " APKS\n\n"
         suffix = "apks"
     else:
-        readme = readme + "### " + versionString + " " + locale + "\n\n"
         suffix = "apk"
-
-    for serverInfo in config["servers"].items():
-        if serverInfo[0] in allocatedServer:
-            readme = readme + \
-                "[" + serverInfo[0] + \
-                "](https://" + \
-                serverInfo[1]["domain"] + "/" + apkPath + ")\n\n"
 
     print("Extracting datapacks...")
 
@@ -113,16 +103,6 @@ def doUpgrade(gameName, locale, packageName, versionString, allocatedServer, ser
             for chunk in obb.get('file').get('data'):
                 second.write(chunk)
 
-        readme = readme + "### " + versionString + " " + locale + \
-            " Google Play " + obb["type"] + " OBB File\n\n"
-
-        for serverInfo in config["servers"].items():
-            if serverInfo[0] in allocatedServer:
-                readme = readme + \
-                    "[" + serverInfo[0] + \
-                    "](https://" + \
-                    serverInfo[1]["domain"] + "/" + obbPath + ")\n\n"
-
     print("Pushing game files to download servers")
     for serverInfo in config["servers"].items():
         if serverInfo[0] in allocatedServer:
@@ -135,6 +115,7 @@ def doUpgrade(gameName, locale, packageName, versionString, allocatedServer, ser
 
     updateConfig(suffix, packageName, newVersion,
                  versionString, obbList, allocatedServer, gameName, locale)
+    appendReadme(suffix, versionString, packageName, locale, allocatedServer, obbList)
 
 
 def appendReadme(suffix, versionString, packageName, locale, allocatedServer, obbs):
@@ -157,7 +138,7 @@ def appendReadme(suffix, versionString, packageName, locale, allocatedServer, ob
     for obbInfo in obbs:
         obbType, obbPath = obbInfo
         readme = readme + "### " + versionString + " " + \
-            locale + " Google Play " + obbType + " OBB File\n\n"
+            locale + " " + obbType + " OBB数据包文件\n\n"
         for serverInfo in config["servers"].items():
             if serverInfo[0] in allocatedServer:
                 readme = readme + \
@@ -206,7 +187,6 @@ def checkUpdate(subversion):
         appendReadme(suffix, versionString, packageName,
                      locale, allocatedServer, subversionInfo["obb"].items())
 
-
 # Login
 print('Logging in with email and password')
 api26Server.login(config["email"], config["password"], None, None)
@@ -235,4 +215,3 @@ if updated:
     os.system("ssh root@" + config["frontend"]["domain"] + " \"konmai\"")
 else:
     print("not updated, skip markdown push")
-
