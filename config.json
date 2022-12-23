@@ -2,6 +2,11 @@
     "email": "your_gmail",
     "password": "your_password",
     "servers": {
+        "China Mobile International V2": {
+            "sshPort": "22",
+            "domain": "cmi-v2.616.sb",
+            "webRoot": "/data/html/"
+        },
         "China Mobile International": {
             "sshPort": "22",
             "domain": "cmi.616.sb",
@@ -35,27 +40,39 @@
     "packages": {
         "\u8303\u5f0f\uff1a\u8d77\u6e90 Paradigm: Reboot": {
             "Google Play": {
+                "suffix": "apks",
                 "packageName": "com.tunergames.paradigm",
                 "version": 1034,
                 "versionString": "1.0.1.2",
                 "obb": {},
                 "allocatedServer": [
                     "China Mobile International",
-                    "Internet Initiative Japan",
                     "CeraNetwork AS4837",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Arcaea": {
-            "Google Play": {
-                "compatibilityMode": true,
+            "\u56fd\u884cC\u7248": {
+                "manualMode": true,
                 "packageName": "moe.low.arc",
-                "version": 1092003,
-                "versionString": "4.1.4",
+                "versionString": "4.1.7c",
+                "obb": {},
+                "allocatedServer": [
+                    "China Mobile International V2",
+                    "China Mobile International",
+                    "Internet Initiative Japan"
+                ]
+            },
+            "Google Play": {
+                "suffix": "apk",
+                "packageName": "moe.low.arc",
+                "version": 1095000,
+                "versionString": "4.1.9",
                 "obb": {},
                 "allocatedServer": [
                     "China Mobile International",
+                    "China Mobile International V2",
                     "Internet Initiative Japan",
                     "CeraNetwork AS4837",
                     "\u67a3\u5e84\u7535\u4fe1"
@@ -106,28 +123,33 @@
         },
         "Beatmania IIDX Ultimate Mobile": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "jp.konami.bm2dxum",
                 "version": 65,
                 "versionString": "1.17.1",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "ChainBeeT": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "jp.matsu4512.chainbeet",
                 "version": 237,
                 "versionString": "4.9.1",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Cytoid": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "me.tigerhix.cytoid",
                 "version": 200107,
                 "versionString": "2.1.1",
@@ -135,12 +157,14 @@
                     "main": "me.tigerhix.cytoid/main.200107.me.tigerhix.cytoid.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Cytus": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.rayark.Cytus.full",
                 "version": 1004740,
                 "versionString": "10.1.4",
@@ -148,25 +172,29 @@
                     "main": "com.rayark.Cytus.full/main.1004740.com.rayark.Cytus.full.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "DanceRail3": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.dancerail3.soragame",
-                "version": 155,
-                "versionString": "1.55",
+                "version": 161,
+                "versionString": "1.61",
                 "obb": {
-                    "main": "com.dancerail3.soragame/main.155.com.dancerail3.soragame.obb"
+                    "main": "com.dancerail3.soragame/main.160.com.dancerail3.soragame.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Deemo": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.rayark.pluto",
                 "version": 1012740,
                 "versionString": "5.0.4",
@@ -175,25 +203,29 @@
                     "patch": "com.rayark.pluto/patch.1012740.com.rayark.pluto.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Deemo II": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.rayark.deemo2",
-                "version": 54138610,
-                "versionString": "2.1.2",
+                "version": 55219210,
+                "versionString": "2.2.1",
                 "obb": {
-                    "main": "com.rayark.deemo2/main.54138610.com.rayark.deemo2.obb"
+                    "main": "com.rayark.deemo2/main.55219210.com.rayark.deemo2.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Dynamix": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.c4cat.dynamix",
                 "version": 316008,
                 "versionString": "3.16.08",
@@ -201,6 +233,7 @@
                     "main": "com.c4cat.dynamix/main.316008.com.c4cat.dynamix.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -239,17 +272,20 @@
         },
         "Full of Music 1": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "net.handicrafter.games.fom1",
                 "version": 70,
                 "versionString": "1.9.5",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Groove Coaster 2": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "jp.co.taito.groovecoasterzero",
                 "version": 72,
                 "versionString": "1.0.17",
@@ -257,41 +293,48 @@
                     "main": "jp.co.taito.groovecoasterzero/main.65.jp.co.taito.groovecoasterzero.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Jubeat": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.konami.android.jubeat",
                 "version": 62,
                 "versionString": "4.4.1",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Kalpa": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.quesera.kalpa",
-                "version": 20017,
-                "versionString": "2.0.17",
+                "version": 20100,
+                "versionString": "2.1.0",
                 "obb": {
-                    "main": "com.quesera.kalpa/main.20017.com.quesera.kalpa.obb"
+                    "main": "com.quesera.kalpa/main.20100.com.quesera.kalpa.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Lanota": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.Noxygames.Lanota",
                 "version": 219018449,
                 "versionString": "2.19.1",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -313,11 +356,13 @@
         },
         "Liminality": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.ProjectZero.Liminality",
                 "version": 23,
                 "versionString": "1.8.0",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -346,11 +391,13 @@
         },
         "Malody": {
             "Android Google Play": {
+                "suffix": "apk",
                 "packageName": "me.mugzone.malody",
                 "version": 202,
                 "versionString": "4.3.7",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             },
@@ -368,17 +415,20 @@
         },
         "Noah's Bottle": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.wen.NoahBottle",
                 "version": 115,
                 "versionString": "2.53",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Orzmic": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.BigTrue.Orzmic",
                 "version": 44,
                 "versionString": "2.11.12",
@@ -386,17 +436,20 @@
                     "main": "com.BigTrue.Orzmic/main.44.com.BigTrue.Orzmic.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "OverRapid": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.arcstar.overrapid",
                 "version": 1591,
                 "versionString": "1591v34MK32",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -415,6 +468,7 @@
         },
         "Polytone": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "co.impactstd.K4",
                 "version": 1000828,
                 "versionString": "1.11",
@@ -423,17 +477,20 @@
                     "patch": "co.impactstd.K4/patch.1000828.co.impactstd.K4.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Project Sekai": {
             "\u65e5\u670d": {
+                "suffix": "apk",
                 "packageName": "com.sega.pjsekai",
                 "version": 200098,
                 "versionString": "2.4.0",
                 "obb": {},
                 "allocatedServer": [
+                    "China Mobile International",
                     "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
@@ -451,6 +508,7 @@
         },
         "Protocol:hyperspace Diver": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.NextFloor.phdiver",
                 "version": 6420002,
                 "versionString": "2.0.2",
@@ -458,17 +516,20 @@
                     "main": "com.NextFloor.phdiver/main.6420001.com.NextFloor.phdiver.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Re:Stage! Prism Step": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.ponycanyon.game.prismstep",
-                "version": 253,
-                "versionString": "1.1.84",
+                "version": 254,
+                "versionString": "1.1.85",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -488,11 +549,13 @@
         },
         "SEVEN's CODE": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "jp.co.applibot.ghmabgzaxkx",
                 "version": 195,
                 "versionString": "1.12.4",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -513,17 +576,20 @@
         },
         "TAKUMI\u00b3": {
             "Google Play": {
+                "suffix": "apks",
                 "packageName": "com.thiqxis.takumicubic",
                 "version": 607,
                 "versionString": "4.8.27",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Tone Sphere": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.bit192labs.tonesphere",
                 "version": 1009003,
                 "versionString": "1.9.3",
@@ -531,12 +597,14 @@
                     "main": "com.bit192labs.tonesphere/main.1009002.com.bit192labs.tonesphere.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "Tokimeki Idol": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "jp.konami.tokimekiidol",
                 "version": 3387502,
                 "versionString": "2.0.2",
@@ -544,12 +612,14 @@
                     "main": "jp.konami.tokimekiidol/main.3387502.jp.konami.tokimekiidol.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
         },
         "VOEZ": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.rayark.valkyrie",
                 "version": 53842500,
                 "versionString": "2.2.1",
@@ -557,6 +627,7 @@
                     "main": "com.rayark.valkyrie/main.53842500.com.rayark.valkyrie.obb"
                 },
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
@@ -577,11 +648,13 @@
         },
         "Split APKs Installer (SAI)": {
             "Google Play": {
+                "suffix": "apk",
                 "packageName": "com.aefyr.sai",
                 "version": 60,
                 "versionString": "4.5",
                 "obb": {},
                 "allocatedServer": [
+                    "Internet Initiative Japan",
                     "\u67a3\u5e84\u7535\u4fe1"
                 ]
             }
